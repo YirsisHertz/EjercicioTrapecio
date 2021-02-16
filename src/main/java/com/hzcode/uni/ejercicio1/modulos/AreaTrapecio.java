@@ -23,8 +23,7 @@ public class AreaTrapecio {
 	 * @return Área de un Trapecio = Retorna el calculo de ((Base Mayor + Base
 	 *         Menor) * Altura) / 2
 	 */
-	public double getAreaTrapecio() {
+	public Double getAreaTrapecio() {
 		return ((B + b) * h) / 2;
 	}
-
 }

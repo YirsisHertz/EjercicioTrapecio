@@ -30,7 +30,7 @@ public class EjercicioAreaTrapecio {
 		double altura = dato.getDatos();
 
 		AreaTrapecio area = new AreaTrapecio(baseMayor, baseMenor, altura);
-		System.out.println(Ansi.colorize(area.getAreaTrapecio() + "", Attribute.GREEN_TEXT()));
+		System.out.println(Ansi.colorize(area.getAreaTrapecio().toString(), Attribute.GREEN_TEXT()));
 
 	}
 }

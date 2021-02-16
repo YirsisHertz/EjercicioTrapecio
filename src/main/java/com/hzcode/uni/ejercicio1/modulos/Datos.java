@@ -26,7 +26,7 @@ public class Datos {
 			valor = leer.nextDouble();
 		} catch (Exception e) {
 			System.out.println(Ansi.colorize("Error al introducir datos, favor de intentar más tarde",
-					Attribute.YELLOW_TEXT(), Attribute.RED_BACK()));
+					Attribute.BRIGHT_RED_TEXT(), Attribute.BOLD()));
 			System.exit(0);
 		}
 	}
