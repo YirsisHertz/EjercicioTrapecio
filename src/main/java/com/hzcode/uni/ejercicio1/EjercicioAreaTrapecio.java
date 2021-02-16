@@ -1,5 +1,7 @@
 package com.hzcode.uni.ejercicio1;
 
+import com.diogonunes.jcolor.Ansi;
+import com.diogonunes.jcolor.Attribute;
 import com.hzcode.uni.ejercicio1.modulos.AreaTrapecio;
 import com.hzcode.uni.ejercicio1.modulos.Datos;
 
@@ -28,7 +30,7 @@ public class EjercicioAreaTrapecio {
 		double altura = dato.getDatos();
 
 		AreaTrapecio area = new AreaTrapecio(baseMayor, baseMenor, altura);
-		System.out.println(area.getAreaTrapecio());
+		System.out.println(Ansi.colorize(area.getAreaTrapecio() + "", Attribute.GREEN_TEXT()));
 
 	}
 }

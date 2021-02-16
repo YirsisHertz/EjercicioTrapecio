@@ -2,6 +2,9 @@ package com.hzcode.uni.ejercicio1.modulos;
 
 import java.util.Scanner;
 
+import com.diogonunes.jcolor.Ansi;
+import com.diogonunes.jcolor.Attribute;
+
 /**
  * @author Yirsis Serrano
  *
@@ -22,7 +25,8 @@ public class Datos {
 		try {
 			valor = leer.nextDouble();
 		} catch (Exception e) {
-			System.out.println("Error al introducir datos, favor de intentar más tarde");
+			System.out.println(Ansi.colorize("Error al introducir datos, favor de intentar más tarde",
+					Attribute.YELLOW_TEXT(), Attribute.RED_BACK()));
 			System.exit(0);
 		}
 	}

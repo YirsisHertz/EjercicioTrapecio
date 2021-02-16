@@ -26,4 +26,5 @@ public class AreaTrapecio {
 	public double getAreaTrapecio() {
 		return ((B + b) * h) / 2;
 	}
+
 }
